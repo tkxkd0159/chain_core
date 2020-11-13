@@ -8,6 +8,4 @@ recursiveMkdir(dbLocation);
 
 const db = level(dbLocation);
 
-export {
-    db
-};
+export { db };

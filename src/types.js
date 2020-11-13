@@ -62,11 +62,11 @@ class Block {
 
 class Blockchain {
     constructor(blocks) {
-        this._blocks = deepCopy(blocks);
+        this._blocks = deepCopy(blocks);   // 처음 생성할 때만 실제 블록들의 정보를 복제
         try { this._length = this.blocks.length; } catch (err) { /* console.log(err); */ } // for decode()
     }
 
-    get blocks() {
+    get blocks() {     // this.blocks, 자체 값 대신 복제본을 반환하므로 외부에서 변경불가능한 immutable 상태로 사용가능
         return this._blocks;
     }
 
@@ -115,7 +115,7 @@ class Blockchain {
 
     async save() {
         const encodedBlockchain = this.encode();
-        try { await db.put("Blockchain", encodedBlockchain); }
+        try { await db.put("Blockchain", encodedBlockchain); }  // data의 key를 "Blockchain"로 명명
         catch (err) { throw err; }
     }
 

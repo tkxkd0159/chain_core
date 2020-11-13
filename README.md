@@ -40,11 +40,14 @@ npm start
 
 ### Start node #2
 
-* Set `HTTP_PORT` for HTTP communication
+* Set `HTTP_PORT` for HTTP communication <br>
+  ```gci env:``` or `set`
 
   ```$env:HTTP_PORT=3002```
   *or*
   ```export HTTP_PORT=3002```
+  *or*
+  `set HTTP_PORT=3002`
 
 * Set `P2P_PORT` for P2P communication among peers
 
