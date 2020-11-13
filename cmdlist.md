@@ -14,10 +14,13 @@ $env:PEERS="ws://127.0.0.1:6001, ws://127.0.0.1:6002"
 set PRIVATE_KEY="third"
 npm start
 
-curl http://127.0.0.1:3001/blocks
+curl http://127.0.0.1:3001/blocks | python -m json.tool
 curl http://127.0.0.1:3001/block/:number
-curl -X POST http://127.0.0.1:3001/mineBlock
-curl -H "Content-type:application/json" --data "{\"data\" : [\"Anything you want\", \"Anything you need\"]}" http://127.0.0.1:3001/mineBlock
+
+curl -X POST http://127.0.0.1:3001/mineBlock   # generate block without data
+curl -H "Content-type:application/json" --data "{\"data\" : [\"Anything you want\", \"Anything you need\"]}" http://127.0.0.1:3001/mineBlock # generate block including data
+curl -H "Content-type:application/json" --data @./post_src/posttest.json http://127.0.0.1:3001/mineBlock   # import data from file
+
 curl http://127.0.0.1:3001/version
 curl http://127.0.0.1:3001/blockVersion/:number
 curl http://127.0.0.1:3001/peers
