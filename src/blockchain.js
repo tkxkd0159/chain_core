@@ -334,7 +334,7 @@ function replaceChain(newBlockchain) {
   }
 }
 
-export default {
+export  {
   initBlockchain,
   getBlockchain,
   getLatestBlock,
