@@ -6,7 +6,6 @@ import { getPublicFromWallet, initWallet } from "./modules"; // wallet
 
 import cors from "cors";
 import express from "express";
-import { json } from "body-parser";
 
 const http_port = process.env.HTTP_PORT || 3001;
 const initialPeers = process.env.PEERS ? process.env.PEERS.split(',') : [];
@@ -14,7 +13,7 @@ const initialPeers = process.env.PEERS ? process.env.PEERS.split(',') : [];
 function initHttpServer() {
     const app = express();
     app.use(cors());
-    app.use(json());
+    app.use(express.json());
 
     app.get("/blocks", function (req, res) {
         res.send(getBlockchain());
