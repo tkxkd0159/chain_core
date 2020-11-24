@@ -1,4 +1,6 @@
 ```bash
+npm install
+
 set PRIVATE_KEY="first"
 npm start
 
