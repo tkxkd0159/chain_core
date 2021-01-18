@@ -223,10 +223,7 @@ function getAdjustedDifficulty(aBlockchain) {
   } else if (timeTaken > timeExpected * 2) {
     if (prevAdjustmentBlock.header.difficulty != 0) {
       return prevAdjustmentBlock.header.difficulty - 1;
-    } else {
-      prevAdjustmentBlock.header.difficulty;
-    }
-  } else {
+    }  else {
     return prevAdjustmentBlock.header.difficulty;
   }
 }
