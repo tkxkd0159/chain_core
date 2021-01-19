@@ -1,5 +1,4 @@
 FROM node
-MAINTAINER lukepark327@gmail.com
 
 ADD . /onechain
 WORKDIR /onechain
