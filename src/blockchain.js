@@ -227,6 +227,7 @@ function getAdjustedDifficulty(aBlockchain) {
     return prevAdjustmentBlock.header.difficulty;
   }
 }
+}
 
 function isValidBlockStructure(block) {
   return (
