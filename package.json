@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lukepark327/onechain.git"
+    "url": "git://github.com/tkxkd0159/chain_core.git"
   },
   "scripts": {
     "start": "nodemon --exec babel-node src/main.js"
