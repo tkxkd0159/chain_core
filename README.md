@@ -10,13 +10,10 @@ $ npx babel-node src/main.js
 ```
 
 
-![structure](./img/structure.png)
-
-
 # Docker Quick Start
 
 ```bash
-docker run -it -p 3001:3001 -p 6001:6001 lukepark327/onechain
+docker run -it -p 3001:3001 -p 6001:6001 tkxkd0159/mycontainer
 ```
 
 # How to Start
@@ -63,15 +60,10 @@ npm start
 npm start
 ```
 
-# How to Use
+# Tutorial
+[Link](https://youtu.be/uBeUTRtgGxI)
 
-<p align="center">
-  <a href="https://youtu.be/uBeUTRtgGxI">
-    <img width="480" src="https://img.youtube.com/vi/uBeUTRtgGxI/0.jpg">
-  </a>
-</p>
 
-> Click on the above image to play the video.
 
 ### Get blockchain
 ```bash
