@@ -1,9 +1,18 @@
-Inspired by [lhartikk/naivechain](https://github.com/lhartikk/naivechain).
-
----
 ![](https://img.shields.io/badge/Node.js-14.15.0-green)
 ![](https://img.shields.io/badge/cURL-7.71.1-red)
 
+# Modified
+### Dockerfile
+About setting directories and volumes
+### package.json
+Exclude body-parser and add new function
+### .babelrc
+Modify configuration
+### src
+Modify some logics and add some testing files
+
+
+ 
 ```
 $ npm install --save-dev @babel-node @babel/preset-env @babel/core
 $ npx babel-node src/main.js
