@@ -1,7 +1,7 @@
 FROM node
 
-ADD . /onechain
-WORKDIR /onechain
+ADD . /mychain
+WORKDIR /mychain
 
 RUN npm install
 
