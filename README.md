@@ -9,15 +9,6 @@ $ npm install --save-dev @babel-node @babel/preset-env @babel/core
 $ npx babel-node src/main.js
 ```
 
-## onechain-explorer
-
-[![explorer](https://github.com/lukepark327/onechain/blob/master/images/comparison.png)](https://github.com/lukepark327/onechain-explorer)
-
-> Click on the above image to go to the `onechain-explorer` repo.
-
-A **`onechain explorer`** is the front-end used to visualize the state of the blockchain. This blockchain explorer allows users to see the latest blocks and details about a particular block. onechain already has multiple functions with HTTP (RESTful API) endpoints. So the web page calls those endpoints and visualizes the results.
-
-The full UI code is located in [lukepark327/onechain-explorer](https://github.com/lukepark327/onechain-explorer) repo. Vue.js and Vuetify are used.
 
 
 ![structure](./img/structure.png)
